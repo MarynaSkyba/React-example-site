@@ -13,7 +13,6 @@ function Home() {
       <Gallery id='services' />
       <Gallery id='products'/>
 
-      <Footer />
     </>
   );
 }

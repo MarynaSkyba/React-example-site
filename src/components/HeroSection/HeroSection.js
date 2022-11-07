@@ -7,7 +7,6 @@ import '../../images/main.jpg'
 function HeroSection() {
   return (
     <div className="hero-container">
-      {/* <img src='../../../public/images/main.jpg' /> */}
       <h1>Let's the jorney begins</h1>
       <p>What are you waiting for?</p>
       <div className="hero-btns">

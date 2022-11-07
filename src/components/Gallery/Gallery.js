@@ -8,7 +8,6 @@ import './Gallery.css';
 
 function Gallery() {
     const [data, setData] = useState([]);
-    console.log("data",data)
 
     const getData=()=>{
         fetch('gallery.json', {
@@ -18,7 +17,6 @@ function Gallery() {
             }
         })
           .then(function(response){
-            console.log("response",response)
             return response.json();
           })
             .then(function (json) {
@@ -40,7 +38,6 @@ function Gallery() {
                           data.gallery && data.gallery.map((item, index) => <GalleryItem index={index} src={item.src} description={item.description} label={item.label} path={item.path} />
 )}
                       
-                      {/* <GalleryItem src={img} text='products' label='products' path='/products'/> */}
 
                   </ul>
               </div>
